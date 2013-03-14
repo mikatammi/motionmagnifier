@@ -23,14 +23,24 @@ package fi.ponr.motionmagnifier;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.hardware.Camera;
+import android.view.SurfaceView;
 
 public class ViewerActivity extends Activity
 {
+    Camera camera;
+    SurfaceView surfaceView;
+
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+        surfaceView = (SurfaceView) findViewById(R.id.surfaceview);
+
+        camera = Camera.open(0);
+
     }
 }
