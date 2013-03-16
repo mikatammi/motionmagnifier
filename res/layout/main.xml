@@ -4,10 +4,16 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
+    <Button
+        android:id="@+id/btnstart" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Camera"
+        />
     <SurfaceView
         android:id="@+id/surfaceview"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         />
 </LinearLayout>
 
